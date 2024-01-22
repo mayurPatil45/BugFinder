@@ -1,38 +1,195 @@
-.App {
+header {
+  color: #64748b;
   text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-top: 80px;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header p {
+  margin-top: 5px;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-content {
+  padding-bottom: 50px; /* Adjust the value as needed */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+main textarea {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--slate-300, #cbd5e1);
+  background: #fff;
+  margin: 0 auto;
+  min-width: 80%;
+  min-height: 500px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+main p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+main p span {
+  color: #ffffff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+main button {
+  width: 297px;
+  height: 40px;
+  padding: 8px 16px;
+  color: #fff;
+  border-radius: 6px;
+  background: #334155;
+  position: relative;
+  cursor: pointer;
+}
+
+main button:hover {
+  background: #475569;
+}
+
+main input[type="file"] {
+  display: none;
+}
+
+.feedback {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.feedback h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.feedback pre {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #f7f7f7;
+  padding: 16px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  border-radius: 6px;
+  margin-bottom: 50px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+}
+
+footer hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+
+.btn {
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) and (min-width: 375px) {
+  header {
+    margin-top: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  header img {
+    width: 60%;
+    height: 60%;
+  }
+
+  header p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  main .note {
+    font-size: 12px;
+  }
+
+  main p {
+    font-size: 12px;
+  }
+
+  .btn {
+    margin-top: -10px;
+  }
+
+  main button {
+    width: 100%;
+  }
+
+  .feedback {
+    width: 80%;
+  }
+
+  footer {
+    bottom: 5px;
+  }
+
+  main textarea {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 375px) and (min-width: 0px) {
+  header {
+    margin-top: 20px;
+  }
+
+  header img {
+    width: 60%;
+    height: 60%;
+  }
+
+  header p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  main .note {
+    font-size: 12px;
+  }
+
+  main p {
+    font-size: 12px;
+  }
+
+  .btn {
+    margin-top: -10px;
+  }
+
+  main button {
+    width: 100%;
+  }
+
+  footer {
+    bottom: 5px;
   }
 }
